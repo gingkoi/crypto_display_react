@@ -1,15 +1,13 @@
 import React from "react";
-import { FaCoins } from "react-icons/fa";
-import "./NavBar.css";
+import { SiCoinmarketcap } from "react-icons/si";
+
 function NavBar() {
   return (
-    <div>
-      <div className="navbar">
-        <FaCoins className="icon" />
-        <h1>
-          Coin <span className="purple">Search</span>
-        </h1>
-      </div>
+    <div className="flex justify-center items-center pt-10 font-bold">
+      <SiCoinmarketcap className="text-2xl text-[#3d6dfb]" size={40} />
+      <h1 className="text-3xl text-black">
+        Coin<span className="text-[#3d6dfb]">Marketplace</span>
+      </h1>
     </div>
   );
 }
